@@ -1,7 +1,11 @@
 import styles from './Header.module.css'
 
+import feedLogo from '../assets/feed-logo.svg'
+
 export function Header() {
     return (
-        <strong className={styles.header}>Feed</strong>
+        <header className={styles.header}>
+            <img src={feedLogo} alt=' Feed Logo' />
+        </header>
     )
 }
